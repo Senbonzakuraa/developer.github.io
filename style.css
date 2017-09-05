@@ -1,0 +1,477 @@
+@font-face{
+        font-family:'Comfortaa','Josefin Sans','Poiret One';
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+body {
+    font-family: Comfortaa, sans-serif;
+    background: radial-gradient(#ffffff,rgb(183, 183, 183))fixed;
+    overflow-x: hidden;
+}
+footer {
+    height: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    color: aliceblue;
+    font-family: Poiret One;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    color: orangered;
+}
+footer img {
+    width: 25px;
+}
+/* HEADER!!!!*/
+.clone-header{
+    width: 100%;
+    height: 56px;
+    background:#cdb6db ;
+    display: none;
+}
+.logo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 10%;
+    flex: 0 10%;
+    font-family: Poiret One;
+    font-size: 3rem;
+    color: red;
+    cursor: pointer;
+}
+.nav {
+    -webkit-box-flex:0;
+    -ms-flex:0 500px;
+    flex:0 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    list-style: none;
+    font-family: Comfortaa;
+    font-size: 0.9em;
+    
+}
+.nav>li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: 56px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-preferred-size: 125px;
+    flex-basis: 125px;
+}
+.nav>li>a {
+    color: white;
+}
+/* CONTENT!!! */
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+}
+#info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 1000px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    color:black;   
+}
+.sticker {
+    width:259px;
+}
+
+.transform {
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -o-transition: all 5s ease;
+    -ms-transition: all 5s ease;
+    transition: all 5s ease;  
+ }
+.on{ 
+    transform: rotate(360deg);
+    overflow: hidden;   
+}
+
+#portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.41);
+    text-align: center;
+    -webkit-box-shadow: 0 0 1px;
+    box-shadow: 0 0 1px;
+}
+.sites {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: auto;
+    padding: 50px;
+}
+.items {
+    width: 120px;
+    padding: 20px
+}
+.items>img {
+    width: 100%;
+}
+
+
+#price {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px;
+    background: rgb(244, 238, 238);
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.card ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: ;
+    -ms-flex-pack: ;
+    justify-content: ;
+    height: 300px;
+    -webkit-box-align: space-around;
+    -ms-flex-align: space-around;
+    align-items: space-around;
+}
+.button {
+    color:white;
+    width: 100px;
+    height: 50px;
+    background: #3f3f5f;
+    line-height: 3;
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 10px;
+}
+.card h3 {
+    width: 100%;
+    height: 40px;
+    padding-top: 20px;
+    background: #20c120;
+    color: white;
+}
+.card ul li{
+    padding: 10px;
+    list-style: none;
+}
+.lite:hover,.middle:hover,.hard:hover{
+    position: relative;
+    top:-20px;
+    -webkit-box-shadow: 0 0 1px;
+    box-shadow: 0 0 1px;
+}
+sub {
+    display: none;
+}
+
+#contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: rgba(237, 237, 237, 0.36);
+    width: 100%;  
+    -webkit-box-shadow: 0 0 1px;  
+    box-shadow: 0 0 1px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+.contacts-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.contacts-item>li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 300px;
+    flex: 0 300px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 40px;
+}
+.link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: black;
+}
+.link p {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    width: 100%;
+}
+.skype {
+    width: 50%;
+}
+.vk {
+    width: 50%;
+}
+.mail {
+    width: 50%;
+}
+/*  FORM!!!! */
+form {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: wrap column;
+    flex-flow: wrap column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.51);
+    padding-top: 50px;
+}
+input {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+
+}
+select {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px
+}
+textarea {
+    width: 300px;
+    font-size: 15px;
+}
+.send {
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+@media screen and (max-width:680px){
+    .nav>li {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        height: 50px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .nav>li>a {
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        line-height: 3.5;
+    }
+    .nav {
+        display: none;
+    }
+    .clone-header {
+        display: none;
+    }
+    .card {
+        margin-top: 0;
+        width: 100%
+    }
+    .card a {
+        width: 100%
+    }
+    sub {
+        display: inherit;
+        font-size: 18px
+    }
+    .button {
+        border-radius: 0;
+    }   
+    #info{
+        height: 500px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+    }
+    .transform {
+        width: 100%;
+        margin: 0;
+    }
+    .contacts-item>li{
+        -webkit-box-flex:1;
+        -ms-flex:1 100px;
+        flex:1 100px;
+    }
+    .skype {
+        width: 200px;
+    }
+    .vk {
+        width: 200px;
+    }
+    .mail {
+        width: 200px;
+    }
+    .contacts-item a{
+        width: 100%;
+    }
+    .contacts-item>li {
+        height: 250px;
+    }
+    .send {
+        width: 100%;
+    }
+ .lite:hover,.middle:hover,.hard:hover  {
+    position: static;
+    }
+}
+@media screen and (max-width:1180px){
+    #info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .contacts-item>li {
+        height: 250px;
+}
